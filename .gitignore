@@ -1,0 +1,7 @@
+source/
+mock-logs/
+.claude/
+.playwright-mcp/
+CLAUDE.md
+notes/CLAUDE.md
+notes/next-session-prompt.md
