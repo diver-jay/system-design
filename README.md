@@ -1,12 +1,14 @@
 # System Design Study
 
 Hello Interview Pro 기반 4주 커리큘럼. 주말 집중 학습.
+타겟: Google > Amazon > Meta > Uber
 
 ## 폴더 구조
 
 ```
 system-design/
-├── notes/        # 주차별 정리
+├── source/       # Hello Interview PDF 원본
+├── notes/        # 주차별 정리 (HI 실제 내용 기반)
 ├── problems/     # 문제별 설계 솔루션
 ├── flashcards/   # 복습용 Q&A
 └── mock-logs/    # 모의 인터뷰 기록
@@ -24,6 +26,7 @@ system-design/
 | [week-01-delivery-framework.md](notes/week-01-delivery-framework.md) | 면접 구조 (Requirements → Deep Dive) |
 | [week-01-core-concepts.md](notes/week-01-core-concepts.md) | 9대 핵심 개념 |
 | [week-01-numbers-to-know.md](notes/week-01-numbers-to-know.md) | 2026 하드웨어 수치 치트시트 |
+| [week-01-deep-dive-2026.md](notes/week-01-deep-dive-2026.md) | Senior/Staff 신호, Scaling 심화, DB/Search |
 
 **HI 페이지:**
 - https://www.hellointerview.com/learn/system-design/in-a-hurry/delivery
@@ -40,9 +43,9 @@ system-design/
 | Redis | /deep-dives/redis | ★★★ |
 | PostgreSQL | /deep-dives/postgres | ★★★ |
 | Kafka | /deep-dives/kafka | ★★★ |
-| Elasticsearch | /deep-dives/elasticsearch | ★★☆ |
+| Elasticsearch | /deep-dives/elasticsearch | ★★☆ (Google 타겟) |
 | Cassandra | /deep-dives/cassandra | ★★☆ |
-| DynamoDB | /deep-dives/dynamodb | ★★☆ |
+| DynamoDB | /deep-dives/dynamodb | ★★☆ (Amazon 타겟) |
 
 ---
 
@@ -65,16 +68,16 @@ system-design/
 
 ---
 
-### Week 4: Advanced Practice Problems
+### Week 4: FAANG 타겟 문제 (Google → Amazon 순)
 > 실전 설계 + 모의 인터뷰 1회
 
-**대규모 미디어/검색 시스템 (3개):**
+**Google 문제 (3개):**
 - [YouTube](https://www.hellointerview.com/learn/system-design/problem-breakdowns/youtube) — 대규모 비디오 플랫폼
-- [Web Crawler](https://www.hellointerview.com/learn/system-design/problem-breakdowns/web-crawler) — 검색 인덱싱
-- [Ad Click Aggregator](https://www.hellointerview.com/learn/system-design/problem-breakdowns/ad-click-aggregator) — 광고 집계 시스템
+- [Web Crawler](https://www.hellointerview.com/learn/system-design/problem-breakdowns/web-crawler) — Google 검색 인덱싱
+- [Ad Click Aggregator](https://www.hellointerview.com/learn/system-design/problem-breakdowns/ad-click-aggregator) — Google Ads 핵심
 
-**인프라 시스템 (1개):**
-- [Distributed Cache](https://www.hellointerview.com/learn/system-design/problem-breakdowns/distributed-cache) — 분산 캐시 설계
+**Amazon 문제 (1개):**
+- [Distributed Cache](https://www.hellointerview.com/learn/system-design/problem-breakdowns/distributed-cache) — 인프라 설계
 
 **모의 인터뷰:** 위 4문제 중 1개 선택해 45분 실전 연습
 
