@@ -23,6 +23,7 @@
 #### 1) MSA 환경에서의 조회 문제 배경
 - **모놀리식**: 단일 DB의 강력한 SQL `JOIN` 및 ACID 트랜잭션으로 강력한 실시간 일관성(Strong Consistency) 보장.
 - **MSA**: **'Database per Service'** 원칙에 의해 DB가 격리되어 DB 레벨의 `JOIN` 불가능.
+  - **`Database per Service` 3대 핵심 목적**: ① **배포 독립성 (Independent Deployability)**, ② **스키마 디커플링 (Schema Decoupling, 스키마 변경이 타 서비스에 미치는 영향 차단)**, ③ **장애 전파 사전 차단 (Fault & Resource Isolation, DB Lock/리소스 고갈 전파 방지)**.
 
 #### 2) API 조합(API Composition) 패턴과 두 가지 딜레마
 - **API 조합기(Composer)**: 클라이언트/API 게이트웨이/BFF가 여러 서비스 provider를 병렬 호출하여 결과를 조립.
